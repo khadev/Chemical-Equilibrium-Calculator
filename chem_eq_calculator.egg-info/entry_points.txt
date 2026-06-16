@@ -1,2 +1,0 @@
-[console_scripts]
-chem-eq-calculator = chem_eq_calculator:main
