@@ -1,14 +1,13 @@
 
 <div align="center">
-  <img src="Screenshots/startwin.png" alt="Chemical Equilibrium Calculator Banner" width="800" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
+  <img src="Screenshots/startwin.png" alt="Chemical Equilibrium Calculator Banner" width="300" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
   
   <br><br>
   
-  <img src="https://img.shields.io/badge/PyPI-1.1.2-2E7D32.svg?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Version">
-  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/License-GPLv3-3F51B5.svg?style=for-the-badge&logo=gnu&logoColor=white" alt="License">
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-4CAF50.svg?style=for-the-badge" alt="Platform">
-
+<img src="https://img.shields.io/badge/PyPI-1.1.2-2E7D32.svg?logo=pypi&logoColor=white" alt="PyPI Version">
+<img src="https://img.shields.io/badge/Python-3.11%2B-3776AB.svg?logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/License-GPLv3-3F51B5.svg?logo=gnu&logoColor=white" alt="License">
+<img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-4CAF50.svg" alt="Platform">
   <br><br>
 
   <h1>⚗️ Chemical Equilibrium Calculator</h1>
