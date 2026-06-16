@@ -1,17 +1,29 @@
 
 <div align="center">
-<img src="Screenshots/startwin.png" alt="Chemical Equilibrium Calculator Banner" width="250">
-  <br>
-# 🌡️ Chemical Equilibrium Calculator
+  <img src="Screenshots/startwin.png" alt="Chemical Equilibrium Calculator Banner" width="800" style="border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);">
+  
+  <br><br>
+  
+  <img src="https://img.shields.io/badge/PyPI-1.1.2-2E7D32.svg?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Version">
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/License-GPLv3-3F51B5.svg?style=for-the-badge&logo=gnu&logoColor=white" alt="License">
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-4CAF50.svg?style=for-the-badge" alt="Platform">
 
-### Professional Thermodynamic Analysis Software
+  <br><br>
 
-[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![PySide6](https://img.shields.io/badge/PySide6-6.6%2B-41CD52.svg?style=for-the-badge&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
-[![License](https://img.shields.io/badge/License-GPLv3-3F51B5.svg?style=for-the-badge)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.0.0-2E7D32.svg?style=for-the-badge)]()
+  <h1>⚗️ Chemical Equilibrium Calculator</h1>
+  <h3>Professional Thermodynamic Analysis Software</h3>
+  <p><strong>PyPI Package:</strong> <a href="https://pypi.org/project/chem-eq-calculator/">chem-eq-calculator</a></p>
 
 </div>
+
+---
+
+## 🚀 Quick Install
+
+```bash
+pip install chem-eq-calculator
+```
 
 ---
 
@@ -24,22 +36,15 @@
 ### Main Application Interface
 
 <div align="center">
-
-![Chemical Equilibrium Calculator](Screenshots/main.png)
-
-*Main application window showing the formulation panel, session management, and results display*
-
+  <img src="Screenshots/main.png" alt="Main Interface" width="800" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+  <p><em>Main application window showing the formulation panel, session management, and results display</em></p>
 </div>
-
-### Additional Screenshots
 
 <details>
 <summary><b>➕ Add Reactant Dialog</b></summary>
 <br>
 <div align="center">
-
-![Add Reactant](Screenshots/add-react.png)
-
+  <img src="Screenshots/add-react.png" alt="Add Reactant" width="800" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
 </div>
 </details>
 
@@ -47,9 +52,7 @@
 <summary><b>🚀 Nozzle Designer</b></summary>
 <br>
 <div align="center">
-
-![Nozzle Designer](Screenshots/nozzle.png)
-
+  <img src="Screenshots/nozzle.png" alt="Nozzle Designer" width="800" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
 </div>
 </details>
 
@@ -57,9 +60,7 @@
 <summary><b>📊 Performance Analysis</b></summary>
 <br>
 <div align="center">
-
-![Performance Analysis](Screenshots/performance.png)
-
+  <img src="Screenshots/performance.png" alt="Performance Analysis" width="800" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
 </div>
 </details>
 
@@ -67,9 +68,7 @@
 <summary><b>📈 Plots & Visualization</b></summary>
 <br>
 <div align="center">
-
-![Plots Visualization](Screenshots/plots.png)
-
+  <img src="Screenshots/plots.png" alt="Plots Visualization" width="800" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
 </div>
 </details>
 
@@ -77,9 +76,7 @@
 <summary><b>⚙️ Settings Dialog</b></summary>
 <br>
 <div align="center">
-
-![Settings Dialog](Screenshots/settings.png)
-
+  <img src="Screenshots/settings.png" alt="Settings Dialog" width="800" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
 </div>
 </details>
 
@@ -90,7 +87,6 @@
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
-- [Screenshots](#-screenshots)
 - [Features](#-features)
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
@@ -109,6 +105,8 @@
 
 The software integrates with **NASA's CEA2** for high-precision calculations while maintaining a robust fallback ideal gas calculator.
 
+📦 **PyPI:** [https://pypi.org/project/chem-eq-calculator/](https://pypi.org/project/chem-eq-calculator/)
+
 ---
 
 ## ✨ Features
@@ -117,56 +115,47 @@ The software integrates with **NASA's CEA2** for high-precision calculations whi
 
 | Feature | Description |
 |---------|-------------|
-| **Equilibrium Calculations** | Complex multi-species chemical equilibrium analysis |
-| **Thermodynamic Properties** | Temperature, pressure, enthalpy, entropy computations |
-| **Nozzle Design** | Isentropic flow analysis and geometric optimization |
-| **Batch Processing** | Parametric sweeps and sensitivity analysis |
-| **Visualization** | Interactive plots, radar charts, and performance graphs |
+| **⚗️ Equilibrium Calculations** | Complex multi-species chemical equilibrium analysis |
+| **📊 Thermodynamic Properties** | Temperature, pressure, enthalpy, entropy computations |
+| **🚀 Nozzle Design** | Isentropic flow analysis and geometric optimization |
+| **🔄 Batch Processing** | Parametric sweeps and sensitivity analysis |
+| **📈 Visualization** | Interactive plots, radar charts, and performance graphs |
 
 ### User Interface
 
 | Feature | Description |
 |---------|-------------|
-| **Searchable Species Database** | 129 oxidizers + 397 fuels with auto-completion |
-| **Real-time Validation** | Pre-flight checks before calculation |
-| **Export Capabilities** | CSV and Excel export with formatted results |
-| **Multi-language** | English and French interfaces |
+| **🔍 Searchable Species Database** | 129 oxidizers + 397 fuels with auto-completion |
+| **✓ Real-time Validation** | Pre-flight checks before calculation |
+| **📁 Export Capabilities** | CSV and Excel export with formatted results |
+| **🌐 Multi-language** | English and French interfaces |
 
 ### Analysis Tools (25+)
 
 | Category | Tools |
 |----------|-------|
-| **Nozzle & Geometry** | Nozzle Designer, Chamber Sizer, Contraction Ratio |
-| **Thermal & Cooling** | Heat Transfer, Regenerative Cooling, Instability Predictor |
-| **Mission & Performance** | Delta-V Calculator, Orbit Insertion, Staging Optimiser |
-| **Advanced Analysis** | Sensitivity Analysis, DOE, Composition Tracking |
-| **Export & Scripting** | LaTeX Generator, Python Script, Unit Converter |
+| **🔧 Nozzle & Geometry** | Nozzle Designer, Chamber Sizer, Contraction Ratio |
+| **🔥 Thermal & Cooling** | Heat Transfer, Regenerative Cooling, Instability Predictor |
+| **🌍 Mission & Performance** | Delta-V Calculator, Orbit Insertion, Staging Optimiser |
+| **📊 Advanced Analysis** | Sensitivity Analysis, DOE, Composition Tracking |
+| **📝 Export & Scripting** | LaTeX Generator, Python Script, Unit Converter |
 
 ---
 
 ## 🚀 Installation
 
-### Prerequisites
+### From PyPI (Recommended)
 
-- Python 3.11 or higher
-- pip package manager
+```bash
+pip install chem-eq-calculator
+```
 
-### Step 1: Clone Repository
+### From Source
 
 ```bash
 git clone https://github.com/khadev/Chemical-Equilibrium-Calculator.git
 cd Chemical-Equilibrium-Calculator
-```
-
-### Step 2: Install Dependencies
-
-```bash
 pip install -r requirements.txt
-```
-
-### Step 3: Run Application
-
-```bash
 python main.py
 ```
 
@@ -175,6 +164,11 @@ python main.py
 ## 🎯 Quick Start
 
 ### Basic Calculation Workflow
+
+```bash
+# Run the application
+chem-eq-calculator
+```
 
 ```
 1. Select Oxidizer    →  Choose from dropdown (e.g., NH₄ClO₄)
@@ -209,7 +203,7 @@ python main.py
 
 ---
 
-## 🚀 NASA CEA2 Integration
+## 🛰️ NASA CEA2 Integration
 
 This application integrates with **NASA's Chemical Equilibrium with Applications (CEA2)** software for high-precision calculations.
 
@@ -220,28 +214,19 @@ This application integrates with **NASA's Chemical Equilibrium with Applications
 **Source Code:** [github.com/nasa/cea](https://github.com/nasa/cea)  
 **Documentation:** [nasa.github.io/cea](https://nasa.github.io/cea/)
 
-### Installation of NASA CEA2 (Optional)
+### Installation (Optional)
 
 ```bash
-# Install via pip (recommended)
-python -m pip install cea
-
-# Or clone from source
-git clone https://github.com/nasa/cea.git
-cd cea
-mkdir build && cd build
-cmake ..
-cmake --build .
-cmake --install .
+pip install cea
 ```
 
-### Configuration in the Application
+### Configuration
 
 1. Open **Settings** (`Ctrl+,`)
 2. Set paths to:
    - `FCEA2.exe` (or `cea` executable)
-   - `thermo.lib` (thermodynamic database)
-   - `trans.lib` (transport properties database)
+   - `thermo.lib`
+   - `trans.lib`
 3. Click **Save**
 
 ---
@@ -275,26 +260,24 @@ cmake --install .
 ---
 
 ## 📁 Project Structure
- 
+
 ```
 Chemical-Equilibrium-Calculator/
-├── main.py                 # Entry point
-├── requirements.txt        # Dependencies
-├── Screenshots/            # Application screenshots
-│   ├── add-react.png
-│   ├── main.png
-│   ├── nozzle.png
-│   ├── performance.png
-│   ├── plots.png
-│   ├── settings.png
-│   └── startwin.png
-├── config/                 # Configuration files
-├── database/               # Species database
-├── engine/                 # Calculation logic
-├── models/                 # Data layer
-└── ui/                     # User interface
-    ├── widgets/            # UI components
-    └── dialogs/            # Popup dialogs
+├── chem_eq_calculator/          # Main package
+│   ├── __init__.py
+│   ├── main.py
+│   ├── engine/                  # Calculation logic
+│   ├── models/                  # Data layer
+│   ├── ui/                      # User interface
+│   │   ├── widgets/
+│   │   └── dialogs/
+│   ├── config/                  # Configuration files
+│   └── database/                # Species database
+├── Screenshots/                 # Application screenshots
+├── setup.py                     # PyPI configuration
+├── README.md
+├── LICENSE
+└── requirements.txt
 ```
 
 ---
@@ -315,11 +298,10 @@ qtawesome>=1.3.0    # Icons
 
 | Issue | Solution |
 |-------|----------|
-| **ModuleNotFoundError** | Run `pip install -r requirements.txt` |
+| **ModuleNotFoundError** | Run `pip install chem-eq-calculator --force-reinstall` |
 | **No species in dropdown** | Verify `databasecea.txt` exists in `database/` folder |
-| **Plots not displaying** | Install matplotlib: `pip install matplotlib` |
+| **Plots not displaying** | `pip install matplotlib` |
 | **FCEA2 execution error** | Configure CEA2 paths in Settings |
-| **CEA2 not found** | Install via `pip install cea` or build from [source](https://github.com/nasa/cea) |
 
 ---
 
@@ -342,25 +324,21 @@ GNU General Public License for more details.
 
 ---
 
-## 🙏 Acknowledgments
-
-- **NASA** - For the CEA2 software and thermodynamic databases
-- **NASA Glenn Research Center** - Original CEA development
-- **Qt Company** - PySide6 framework
-
----
-
 ## 👨‍💻 Author
 
 **Oukil Khaled Ibn Elwalid**
+
+- GitHub: [@khadev](https://github.com/khadev)
+- PyPI: [chem-eq-calculator](https://pypi.org/project/chem-eq-calculator/)
 
 ---
 
 <div align="center">
 
-**🌡️ Made for the scientific community**
+**⚗️ Made for the scientific community**
 
-[Report Bug](https://github.com/khadev/Chemical-Equilibrium-Calculator/issues) · [Request Feature](https://github.com/khadev/Chemical-Equilibrium-Calculator/issues) · [NASA CEA Repository](https://github.com/nasa/cea)
+[![PyPI](https://img.shields.io/badge/PyPI-chem--eq--calculator-2E7D32.svg)](https://pypi.org/project/chem-eq-calculator/)
+[![GitHub](https://img.shields.io/badge/GitHub-khadev%2FChemical--Equilibrium--Calculator-181717.svg?style=flat-square&logo=github)](https://github.com/khadev/Chemical-Equilibrium-Calculator)
 
 </div>
 
