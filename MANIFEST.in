@@ -1,0 +1,11 @@
+include README.md
+include README_PYPI.md
+include LICENSE
+include requirements.txt
+include config/config.example.json
+include config/translations.json
+include database/databasecea.txt
+recursive-include Screenshots *.png
+recursive-include ui *.py
+recursive-include engine *.py
+recursive-include models *.py

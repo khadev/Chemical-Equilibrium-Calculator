@@ -1,0 +1,31 @@
+{
+  "language": "en",
+  "license": "GPL-3.0"
+  "theme": "light",
+  "paths": {
+    "fcea2_exe": "C:/Users/Doe/Desktop/Nasa/NasaGui/FCEA2.exe",
+    "thermo_lib": "C:/Users/Doe/Desktop/Nasa/NasaGui/thermo/thermo.lib",
+    "trans_lib": "C:/Users/Doe/Desktop/Nasa/NasaGui/trans/trans.lib",
+    "cea_work_dir": "C:/Users/Doe/Desktop/Nasa/NasaGui"
+  },
+  "units": {
+    "pressure": "bar",
+    "temperature": "K",
+    "isp": "m/s",
+    "thrust": "kN"
+  },
+  "display": {
+    "show_legend": true,
+    "show_data_points": true,
+    "line_thickness": 2
+  },
+  "window": {
+    "width": 1366,
+    "height": 720
+  },
+  "app": {
+    "name": "CEA Calculator Pro",
+    "version": "1.0.0",
+    "author": "Oukil Khaled Ibn Elwalid"
+  }
+}

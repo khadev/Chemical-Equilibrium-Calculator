@@ -1,0 +1,122 @@
+{
+  "species": [
+    {
+      "name": "oui",
+      "composition": {
+        "C": 12.0,
+        "H": 12.0,
+        "N": 44.0,
+        "O": 4.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel"
+    },
+    {
+      "name": "test",
+      "composition": {
+        "C": 25.0,
+        "H": 25.0,
+        "N": 52.0
+      },
+      "enthalpy": -2.0,
+      "type": "fuel"
+    },
+    {
+      "name": "tretr",
+      "composition": {
+        "C": 12.0,
+        "H": 2.0,
+        "N": 12.0,
+        "O": 12.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel"
+    },
+    {
+      "name": "TEST",
+      "composition": {
+        "C": 12.0,
+        "H": 12.0,
+        "N": 3.0,
+        "O": 4.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel"
+    },
+    {
+      "name": "test2",
+      "composition": {
+        "C": 12.0,
+        "H": 12.0,
+        "N": 22.0,
+        "O": 22.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel"
+    },
+    {
+      "name": "tesst",
+      "composition": {
+        "C": 12.0,
+        "H": 2.0,
+        "N": 3.0,
+        "O": 3.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel"
+    },
+    {
+      "name": "testtt",
+      "composition": {
+        "C": 4.0,
+        "H": 5.0,
+        "N": 6.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel"
+    },
+    {
+      "name": "testt",
+      "composition": {
+        "C": 12.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel",
+      "wt": 100.0,
+      "temp_k": 298.0
+    },
+    {
+      "name": "ttt",
+      "composition": {
+        "C": 12.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel",
+      "wt": 100.0,
+      "temp_k": 298.0
+    },
+    {
+      "name": "tt",
+      "composition": {
+        "C": 23.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel",
+      "wt": 100.0,
+      "temp_k": 298.0
+    },
+    {
+      "name": "testR",
+      "composition": {
+        "C": 4.0,
+        "H": 5.0,
+        "N": 5.0,
+        "O": 6.0
+      },
+      "enthalpy": 0.0,
+      "type": "fuel",
+      "wt": 100.0,
+      "temp_k": 298.0
+    }
+  ]
+}

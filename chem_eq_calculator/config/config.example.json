@@ -1,0 +1,30 @@
+{
+  "language": "en",
+  "license": "GPL-3.0"
+  "paths": {
+    "fcea2_exe": "",
+    "thermo_lib": "",
+    "trans_lib": "",
+    "cea_work_dir": ""
+  },
+  "units": {
+    "pressure": "bar",
+    "temperature": "K",
+    "isp": "m/s",
+    "thrust": "kN"
+  },
+  "display": {
+    "show_legend": true,
+    "show_data_points": true,
+    "line_thickness": 2
+  },
+  "window": {
+    "width": 1400,
+    "height": 880
+  },
+  "app": {
+    "name": "Chemical Equilibrium Calculator",
+    "version": "1.0.0",
+    "author": "Oukil Khaled Ibn Elwalid"
+  }
+}

@@ -1,0 +1,284 @@
+# ═══════════════════════════════════════════════════════════════════════
+# NASA CEA SPECIES DATABASE FOR PYTHON
+# ═══════════════════════════════════════════════════════════════════════
+
+# ─── OXIDIZERS (80+ species) ───────────────────────────────────────────
+ALL_OXIDIZER_SPECIES = [
+    # --- Elements / Atomic ---
+    "O", "O+", "O-", "F", "F+", "F-", "Cl", "Cl+", "Cl-",
+    "Br", "Br+", "Br-", "I", "I+", "I-",
+    
+    # --- Interhalogens & Halogen Oxides ---
+    "Cl2", "F2", "Br2", "I2",
+    "ClF", "ClF3", "ClF5", "BrF", "BrF3", "BrF5", "IF5", "IF7",
+    "ClO", "ClO2", "Cl2O", "BrO", "OBrO", "BrOO", "BrO3",
+    "F2O", "F2O2", "FO", "FO2,FOO", "FO2,OFO", "FS2F",
+    
+    # --- Nitrogen Oxides & Acids ---
+    "N2O", "N2O+", "NO", "NO+", "NO2", "NO2-", "NO3", "NO3-",
+    "N2O3", "N2O4", "N2O5",
+    "HNO", "HNO2", "HNO3",
+    "NOCl", "NOF", "NOF3", "NO2Cl", "NO2F", "NO3F",
+    
+    # --- Sulfur Oxides & Acids ---
+    "SO", "SO-", "SO2", "SO2-", "SO3",
+    "H2SO4", "HSO3F",
+    "SOF2", "SO2F2", "SO2Cl2", "SO2FCl",
+    
+    # --- Peroxides ---
+    "H2O2", "HO2", "HO2-", "HOF",
+    "O2", "O2+", "O2-", "O3",
+    "H2O", "H2O+",
+    
+    # --- Carbon Oxides ---
+    "CO2", "CO2+",
+    
+    # --- Metal Oxides (thermite-type oxidizers) ---
+    "FeO", "Fe2O3(cr)", "Fe3O4(cr)", "Fe3O4(L)",
+    "Fe.947O(cr)", "Fe.947O(L)",
+    "CuO(cr)", "Cu2O(cr)", "Cu2O(L)",
+    "MoO2(cr)", "MoO3(cr)", "MoO3(L)",
+    
+    # --- Solid Oxidizer Salts ---
+    "NH4ClO4(I)", "NH4ClO4(II)",
+    "NH4NO3(IV)", "NH4NO3(III)", "NH4NO3(II)", "NH4NO3(I)", "NH4NO3(L)",
+    "LiClO4(cr)",
+    "KNO3(a)", "KNO3(b)", "KNO3(L)",
+    "NaNO3(a)", "NaNO3(b)", "NaNO3(L)",
+    "ADN", "HAN",
+    
+    # --- Liquid Oxidizers (Condensed Phase) ---
+    "Air", "InertAir",
+    "ClF3(L)", "ClO3F", "ClO3F(L)", "Cl2(L)", "F2(L)", "F2O(L)",
+    "HNO3(L)", "H2O2(L)", "IRFNA",
+    "NF3(L)", "N2(L)", "N2O4(L)",
+    "O2(L)", "InertO2(L)", "O3(L)",
+    "LMP-103S"
+]
+
+
+# ─── FUELS (200+ species) ──────────────────────────────────────────────
+ALL_FUEL_SPECIES = [
+    # --- Hydrogen & Isotopes ---
+    "H", "H+", "H-", "InertH",
+    "D", "D+", "D-",
+    "H2", "H2+", "H2-", "InertH2",
+    "HD", "HD+", "D2", "D2+", "D2-",
+    
+    # --- Carbon (Elemental) ---
+    "C", "C+", "C-", "C(gr)",
+    "C2", "C2+", "C2-", "C3", "C4", "C5",
+    
+    # --- Light Metals (Elemental) ---
+    "Al", "Al+", "Al-", "Al(cr)", "Al(L)",
+    "Mg", "Mg+", "Mg(cr)", "Mg(L)",
+    "B", "B+", "B-", "B(b)", "B(L)",
+    "Be", "Be+", "Be++", "Be(a)", "Be(b)", "Be(L)",
+    "Li", "Li+", "Li-", "Li(cr)", "Li(L)",
+    
+    # --- Alkali & Alkaline Earth Metals ---
+    "Na", "Na+", "Na-", "Na(cr)", "Na(L)",
+    "K", "K+", "K-", "K(cr)", "K(L)",
+    "Ca", "Ca+", "Ca(cr)", "Ca(b)", "Ca(L)",
+    "Sr", "Sr+", "Sr(cr)", "Sr(L)",
+    "Ba", "Ba+", "Ba(cr)", "Ba(L)",
+    
+    # --- Transition Metals ---
+    "Ti", "Ti+", "Ti-", "Ti(a)", "Ti(b)", "Ti(L)",
+    "Zr", "Zr+", "Zr-", "Zr(a)", "Zr(b)", "Zr(L)",
+    "V", "V+", "V-", "V(cr)", "V(L)",
+    "Cr", "Cr+", "Cr-", "Cr(cr)", "Cr(L)",
+    "Mn", "Mn+", "Mn(cr)", "Mn(L)",
+    "Fe", "Fe+", "Fe-", "Fe(a)", "Fe(c)", "Fe(d)", "Fe(L)",
+    "Co", "Co+", "Co-", "Co(a)", "Co(b)", "Co(L)",
+    "Ni", "Ni+", "Ni-", "Ni(cr)", "Ni(L)",
+    "Cu", "Cu+", "Cu-", "Cu(cr)", "Cu(L)",
+    "Zn", "Zn+", "Zn(cr)", "Zn(L)",
+    "Mo", "Mo+", "Mo-", "Mo(cr)", "Mo(L)",
+    "W", "W+", "W-", "W(cr)", "W(L)",
+    "Nb", "Nb+", "Nb-", "Nb(cr)", "Nb(L)",
+    "Ta", "Ta+", "Ta-", "Ta(cr)", "Ta(L)",
+    
+    # --- Post-Transition Metals ---
+    "Sn", "Sn+", "Sn-", "Sn(cr)", "Sn(L)",
+    "Pb", "Pb+", "Pb-", "Pb(cr)", "Pb(L)",
+    
+    # --- Metalloids ---
+    "Si", "Si+", "Si-", "Si(cr)", "Si(L)",
+    "Ge", "Ge+", "Ge-", "Ge(cr)", "Ge(L)",
+    "P", "P+", "P-", "P(cr)", "P(L)",
+    "S", "S+", "S-", "S(a)", "S(b)", "S(L)",
+    
+    # --- Rare Earth ---
+    "Sc", "Sc+", "Sc-", "Sc(cr)", "Sc(L)",
+    "Y", "Y+", "Y(cr)", "Y(L)",
+    
+    # --- Hydrides ---
+    "NH3", "NH2", "NH", "NH+", "N2H2", "N2H4", "N3H",
+    "B2H6", "B4H10", "B5H9", "BH3", "BH2", "BH",
+    "SiH4", "SiH3", "SiH2", "SiH",
+    "PH3", "PH2", "PH2-", "PH",
+    "GeH4",
+    
+    # --- Simple Hydrocarbons (Alkanes) ---
+    "CH4", "InertCH4",
+    "CH3", "CH2", "CH", "CH+",
+    "C2H6", "C2H5", "C2H4", "InertC2H4", "C2H3,vinyl",
+    "C2H2,acetylene", "C2H2,vinylidene",
+    "C3H8", "C3H7,n-propyl", "C3H7,i-propyl",
+    "C3H6,propylene", "C3H6,cyclo-",
+    "C3H5,allyl",
+    "C3H4,allene", "C3H4,propyne", "C3H4,cyclo-",
+    "C3H3,1-propynl", "C3H3,2-propynl",
+    "C4H10,n-butane", "C4H10,isobutane",
+    "C4H9,n-butyl", "C4H9,i-butyl", "C4H9,s-butyl", "C4H9,t-butyl",
+    "C4H8,1-butene", "C4H8,cis2-buten", "C4H8,tr2-butene",
+    "C4H8,isobutene", "C4H8,cyclo-",
+    "C4H6,butadiene", "C4H6,1butyne", "C4H6,2butyne", "C4H6,cyclo-",
+    "C4H4,1,3-cyclo-", "C4H2,butadiyne",
+    "C5H12,n-pentane", "C5H12,i-pentane", "CH3C(CH3)2CH3",
+    "C5H11,pentyl", "C5H11,t-pentyl",
+    "C5H10,1-pentene", "C5H10,cyclo-",
+    "C5H8,cyclo-", "C5H6,1,3cyclo-",
+    "C6H14,n-hexane",
+    "C6H13,n-hexyl",
+    "C6H12,1-hexene", "C6H12,cyclo-",
+    "C6H10,cyclo-",
+    "C6H6", "C6H5,phenyl", "C6H5O,phenoxy", "C6H5OH,phenol", "C6H2",
+    "C7H16,n-heptane", "C7H16,2-methylh",
+    "C7H15,n-heptyl",
+    "C7H14,1-heptene",
+    "C7H8", "C7H8O,cresol-mx", "C7H7,benzyl",
+    "C8H18,n-octane", "C8H18,isooctane",
+    "C8H17,n-octyl",
+    "C8H16,1-octene",
+    "C8H8,styrene", "C8H10,ethylbenz",
+    "C9H19,n-nonyl",
+    "C10H8,naphthale", "InertC10H8,naph",
+    "C10H21,n-decyl",
+    "C12H9,o-bipheny", "C12H10,biphenyl",
+    "C6D5,phenyl", "C6D6",
+    
+    # --- Oxygenated Fuels (Alcohols, Ethers, Aldehydes, Ketones, Acids) ---
+    "CH3OH", "CH3OCH3", "CH3O2CH3",
+    "CH2O,formaldehy", "CH3CHO,ethanal",
+    "C2H5OH", "C2H4O,ethylen-o",
+    "CH3COOH", "(CH3COOH)2",
+    "C3H6O,propylox", "C3H6O,acetone", "C3H6O,propanal",
+    "C3H8O,1propanol", "C3H8O,2propanol",
+    "HCOOH", "(HCOOH)2",
+    "CH2OH", "CH2OH+", "CH3O", "CH3OOH",
+    "OHCH2COOH", "CH2Br-COOH", "CH2Cl-COOH",
+    
+    # --- Nitrogen-Containing Fuels ---
+    "HCN", "HNC", "CH3CN", "CH3N2CH3",
+    "C2N2", "C4N2",
+    "HCCN", "CN", "CN+", "CN-", "CNN",
+    "NCO", "HNCO",
+    "CH3NO2(L)", "CH6N2(L)",
+    "C2H8N2(L),UDMH",
+    "C3H7NO3(L)",
+    "C6H5NH2(L)",
+    
+    # --- Boron Compounds ---
+    "B2S3(cr)", "B2S3(L)",
+    "BN", "BN(cr)", "BN(L)",
+    
+    # --- Sulfur Compounds ---
+    "CS2", "CS", "COS", "H2S",
+    
+    # --- Other Fuels ---
+    "CO", "CO+",
+    "Fe(CO)5", "Fe(CO)5(L)",
+    
+    # --- Liquid Fuels (Condensed Phase) ---
+    "H2(L)", "InertH2(L)",
+    "NH3(L)", "N2H4(L)",
+    "CH4(L)", "CH3OH(L)",
+    "C2H2(L),acetyle", "C2H4(L)", "C2H6(L)",
+    "C2H4O(L),ethyle", "C2H5OH(L)", "C2H8N2(L),UDMH", "C2N2(L)",
+    "C3H6(L),propyle", "C3H8(L)", "C3H7NO3(L)",
+    "C4H8(L),1-buten", "C4H10(L),n-buta", "C4H10(L),isobut",
+    "C5H12(L),n-pent",
+    "C6H6(L)", "C6H5NH2(L)", "C6H14(L),n-hexa",
+    "C7H8(L)", "C7H16(L),n-hept",
+    "C8H18(L),n-octa", "C8H18(L),isooct",
+    "B2H6(L)", "B5H9(L)", "(CH2)x(cr)",
+    "ClF3(L)", "Cl2(L)", "F2(L)", "F2O(L)",
+    
+    # --- Jet Fuels & Hydrocarbon Mixtures ---
+    "JP-4", "InertJP-4",
+    "JP-5", "InertJP-5",
+    "JP-7", "InertJP-7",
+    "JP-10(L)", "InertJP-10(L)",
+    "JP-10(g)", "InertJP-10(g)",
+    "Jet-A(L)", "InertJet-A(L)",
+    "Jet-A(g)", "InertJet-A(g)",
+    "RP-1", "InertRP-1",
+    "Paraffin",
+    "Biodiesel",
+    "n-Butanol"
+]
+
+
+# ─── NAMED FUELS ────────────────────────────────────────────────────────
+ALL_NAMED_SPECIES = [
+    "HTPB", "MCCN", "OCN", "MCCCN", "OCCN",
+    "MCCAN", "OCAN", "NCS", "NCT", "NPS", "Custom"
+]
+
+# Fuel presets with enthalpy and atomic composition
+# Format: {name, enthalpy (kJ/mol), C, H, O, N}
+FUEL_PRESETS = [
+    {"name": "HTPB",  "enth": -58.0,   "C": 7.075, "H": 10.650, "O": 0.223, "N": 0.063},
+    {"name": "MCCN",  "enth": -573.0,  "C": 5.960, "H": 7.150,  "O": 10.940, "N": 2.750},
+    {"name": "OCN",   "enth": -714.0,  "C": 6.010, "H": 7.100,  "O": 10.900, "N": 2.630},
+    {"name": "MCCCN", "enth": -491.0,  "C": 6.830, "H": 7.950,  "O": 11.940, "N": 3.700},
+    {"name": "OCCN",  "enth": -615.0,  "C": 6.850, "H": 7.970,  "O": 11.920, "N": 3.380},
+    {"name": "MCCAN", "enth": -295.0,  "C": 7.700, "H": 13.110, "O": 9.980,  "N": 4.750},
+    {"name": "OCAN",  "enth": -598.0,  "C": 7.750, "H": 13.140, "O": 9.930,  "N": 4.270},
+    {"name": "NCS",   "enth": -472.0,  "C": 5.890, "H": 7.950,  "O": 9.830,  "N": 3.400},
+    {"name": "NCT",   "enth": -851.0,  "C": 7.900, "H": 10.950, "O": 8.800,  "N": 2.780},
+    {"name": "NPS",   "enth": -492.2,  "C": 6.500, "H": 7.150,  "O": 10.990, "N": 2.700},
+]
+
+
+# ─── PERIODIC TABLE ELEMENTS (for Sym5/Num5 extra element) ────────────
+ALL_ELEMENTS = [
+    "",  # Empty option for "no extra element"
+    "Ag", "Al", "Ar", "As", "Au", "B", "Ba", "Be", "Bi", "Br", "C",
+    "Ca", "Cd", "Ce", "Cl", "Co", "Cr", "Cs", "Cu", "D", "Dy", "Er",
+    "Eu", "F", "Fe", "Ga", "Gd", "Ge", "H", "He", "Hf", "Hg", "Ho",
+    "I", "In", "Ir", "K", "Kr", "La", "Li", "Lu", "Mg", "Mn", "Mo",
+    "N", "Na", "Nb", "Nd", "Ne", "Ni", "O", "Os", "P", "Pb", "Pd",
+    "Pr", "Pt", "Rb", "Re", "Rh", "Rn", "Ru", "S", "Sb", "Sc", "Se",
+    "Si", "Sm", "Sn", "Sr", "Ta", "Tb", "Te", "Th", "Ti", "Tl", "Tm",
+    "U", "V", "W", "Xe", "Y", "Yb", "Zn", "Zr"
+]
+
+# Elements with full names (for display in selector)
+ELEMENTS_WITH_NAMES = [
+    ("", "None (clear)"),
+    ("Ag", "Silver"), ("Al", "Aluminum"), ("Ar", "Argon"), ("As", "Arsenic"),
+    ("Au", "Gold"), ("B", "Boron"), ("Ba", "Barium"), ("Be", "Beryllium"),
+    ("Bi", "Bismuth"), ("Br", "Bromine"), ("C", "Carbon"), ("Ca", "Calcium"),
+    ("Cd", "Cadmium"), ("Ce", "Cerium"), ("Cl", "Chlorine"), ("Co", "Cobalt"),
+    ("Cr", "Chromium"), ("Cs", "Cesium"), ("Cu", "Copper"), ("D", "Deuterium"),
+    ("Dy", "Dysprosium"), ("Er", "Erbium"), ("Eu", "Europium"), ("F", "Fluorine"),
+    ("Fe", "Iron"), ("Ga", "Gallium"), ("Gd", "Gadolinium"), ("Ge", "Germanium"),
+    ("H", "Hydrogen"), ("He", "Helium"), ("Hf", "Hafnium"), ("Hg", "Mercury"),
+    ("Ho", "Holmium"), ("I", "Iodine"), ("In", "Indium"), ("Ir", "Iridium"),
+    ("K", "Potassium"), ("Kr", "Krypton"), ("La", "Lanthanum"), ("Li", "Lithium"),
+    ("Lu", "Lutetium"), ("Mg", "Magnesium"), ("Mn", "Manganese"), ("Mo", "Molybdenum"),
+    ("N", "Nitrogen"), ("Na", "Sodium"), ("Nb", "Niobium"), ("Nd", "Neodymium"),
+    ("Ne", "Neon"), ("Ni", "Nickel"), ("O", "Oxygen"), ("Os", "Osmium"),
+    ("P", "Phosphorus"), ("Pb", "Lead"), ("Pd", "Palladium"), ("Pr", "Praseodymium"),
+    ("Pt", "Platinum"), ("Rb", "Rubidium"), ("Re", "Rhenium"), ("Rh", "Rhodium"),
+    ("Rn", "Radon"), ("Ru", "Ruthenium"), ("S", "Sulfur"), ("Sb", "Antimony"),
+    ("Sc", "Scandium"), ("Se", "Selenium"), ("Si", "Silicon"), ("Sm", "Samarium"),
+    ("Sn", "Tin"), ("Sr", "Strontium"), ("Ta", "Tantalum"), ("Tb", "Terbium"),
+    ("Te", "Tellurium"), ("Th", "Thorium"), ("Ti", "Titanium"), ("Tl", "Thallium"),
+    ("Tm", "Thulium"), ("U", "Uranium"), ("V", "Vanadium"), ("W", "Tungsten"),
+    ("Xe", "Xenon"), ("Y", "Yttrium"), ("Yb", "Ytterbium"), ("Zn", "Zinc"),
+    ("Zr", "Zirconium")
+]
