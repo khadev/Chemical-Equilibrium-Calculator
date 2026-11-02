@@ -1,0 +1,15 @@
+prob
+rocket equilibrium
+p,bar=70,
+sup,ae/at=10,
+
+react
+oxid=NH4ClO4(I) wt=69 t,k=298.0
+fuel=Al(cr) wt=20 t,k=298.0
+name=HTPB wt=11 t,k=298.0
+h,kj/mol=-58 C 7.075 H 10.650 N 0.223 O 0.063
+
+outp
+siunits massf
+
+end

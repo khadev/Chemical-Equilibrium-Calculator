@@ -1,0 +1,54 @@
+{
+  "presets": [
+    {
+      "name": "LOX / RP-1  (Saturn V F1)",
+      "oxidizer": {"name": "O2(L)", "temperature": 90, "weight": 68},
+      "fuel":     {"name": "RP-1",  "temperature": 298, "weight": 32},
+      "chamber_pressure": 70,
+      "of_ratio": 2.27,
+      "exit_pressure": 1.0,
+      "area_ratio": 16,
+      "tcest": 3800
+    },
+    {
+      "name": "LOX / LH2  (SSME)",
+      "oxidizer": {"name": "O2(L)", "temperature": 90, "weight": 75},
+      "fuel":     {"name": "H2(L)", "temperature": 20, "weight": 25},
+      "chamber_pressure": 204,
+      "of_ratio": 6.0,
+      "exit_pressure": 1.0,
+      "area_ratio": 77,
+      "tcest": 3800
+    },
+    {
+      "name": "N2O4 / MMH  (Hypergolic)",
+      "oxidizer": {"name": "N2O4(L)", "temperature": 298, "weight": 65},
+      "fuel":     {"name": "MMH",     "temperature": 298, "weight": 35},
+      "chamber_pressure": 20,
+      "of_ratio": 1.65,
+      "exit_pressure": 0.001,
+      "area_ratio": 50,
+      "tcest": 3500
+    },
+    {
+      "name": "AP / Al / HTPB  (Solid)",
+      "oxidizer": {"name": "NH4ClO4(I)", "temperature": 298, "weight": 68},
+      "fuel":     {"name": "Al(cr)",      "temperature": 298, "weight": 18},
+      "chamber_pressure": 70,
+      "of_ratio": 4.0,
+      "exit_pressure": 1.0,
+      "area_ratio": 10,
+      "tcest": 3800
+    },
+    {
+      "name": "LOX / CH4  (Raptor)",
+      "oxidizer": {"name": "O2(L)",  "temperature": 90, "weight": 73},
+      "fuel":     {"name": "CH4(L)", "temperature": 111, "weight": 27},
+      "chamber_pressure": 330,
+      "of_ratio": 3.55,
+      "exit_pressure": 1.0,
+      "area_ratio": 40,
+      "tcest": 3800
+    }
+  ]
+}

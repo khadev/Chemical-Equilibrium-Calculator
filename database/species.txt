@@ -1,0 +1,128 @@
+# database/species.txt
+# =======================
+# Curated NASA-CEA-style species database, exec'd by SpeciesDatabase._load().
+# Oxidizers and fuels are kept in strictly disjoint flat lists (OXIDIZERS,
+# FUELS, NAMED_FUELS) for the "Curated" quick-pick mode in the species
+# picker. The *_CATEGORIES dicts group the same names for display only —
+# every name in a category list also appears in the flat list above it.
+#
+# NOTE ON SCOPE: NASA's real thermo.lib contains ~2000 species used
+# interchangeably as oxidizer, fuel, or product — CEA itself has no
+# concept of "this species IS an oxidizer". This curated list reflects
+# common propellant-engineering usage for guided quick-pick; species
+# imported from a real thermo.lib file (Tools > Import Database) are
+# merged separately into an unrestricted "All Species" pool usable for
+# either role, matching real CEA semantics.
+
+OXIDIZERS = [
+    # --- Cryogenic ---
+    "O2(L)", "O2", "F2(L)", "F2", "O3(L)", "O3", "FLOX(L)", "OF2",
+    # --- Storable / Hypergolic liquid ---
+    "N2O4(L)", "N2O4", "N2O3(L)", "MON-10(L)", "MON-25(L)", "RFNA(L)",
+    "IRFNA-III(L)", "IRFNA-IV(L)", "HNO3(L)", "HNO3", "H2O2(L)", "H2O2",
+    "ClF3(L)", "ClF3", "ClF5(L)", "ClF5", "BrF3", "BrF5", "IF5", "N2F4",
+    "NF3(L)", "NF3", "N2O", "NO2", "NO", "ONF3",
+    # --- Solid oxidizers (used in solid/hybrid propellants) ---
+    "NH4ClO4(I)", "NH4ClO4(II)", "NH4ClO4(III)",
+    "NH4NO3(I)", "NH4NO3(II)", "NH4NO3(III)", "NH4NO3(IV)", "NH4NO3(L)",
+    "KNO3(a)", "KNO3(b)", "KNO3(L)", "NaNO3(a)", "NaNO3(b)", "NaNO3(L)",
+    "LiClO4(cr)", "LiClO4(L)", "KClO4(cr)", "NaClO4(cr)",
+    "ADN", "HAN", "AN/AC", "DNAN",
+    # --- Specialty / research ---
+    "Air", "CO2", "SO2", "SO3", "Cl2O7", "ClO3F", "HClO4(L)",
+]
+
+FUELS = [
+    # --- Cryogenic ---
+    "H2(L)", "H2", "CH4(L)", "CH4", "C2H6(L)", "C2H6", "C2H4(L)", "C2H4",
+    "C3H8(L)", "C3H8", "Slush-H2",
+    # --- Hydrocarbon (storable) ---
+    "RP-1", "RP-2", "RG-1", "Syntin", "Kerosene", "JP-4", "JP-5", "JP-7",
+    "JP-8", "JP-10(L)", "Jet-A(L)", "Diesel", "n-Heptane", "n-Octane",
+    "Isooctane", "Cyclohexane", "Benzene", "Toluene", "Xylene",
+    # --- Alcohols ---
+    "CH3OH(L)", "CH3OH", "C2H5OH(L)", "C2H5OH", "C3H7OH(L)",
+    "C3H8O,1propanol", "C4H9OH(L)", "n-Butanol", "Methanol/Water",
+    # --- Storable / Hypergolic ---
+    "N2H4(L)", "N2H4", "MMH", "MMH(L)", "UDMH", "UDMH(L)", "Aerozine-50",
+    "C2H8N2(L),UDMH", "N2H4/UDMH",
+    # --- Esters / Ethers / Misc organics ---
+    "CH3OCH3", "C2H4O,ethylen-o", "CH3COOH", "C3H6O,acetone",
+    "HCOOH", "C6H12O6", "Biodiesel", "Triethylaluminum", "TEA-TEB",
+    # --- Metals (solid/hybrid/metallized) ---
+    "Al(cr)", "Al(L)", "Mg(cr)", "Mg(L)", "B(b)", "B(L)", "Be(cr)", "Be(L)",
+    "Li(cr)", "Li(L)", "Zr(cr)", "Ti(cr)", "Be(a)", "AlH3(cr)",
+    # --- Hybrid solid fuels ---
+    "Paraffin", "ABS(cr)", "PE(cr)", "PMMA(cr)", "PVC(cr)", "(CH2)x(cr)",
+    # --- Boranes ---
+    "B2H6", "B2H6(L)", "B5H9", "B5H9(L)", "B10H14",
+]
+
+NAMED_FUELS = [
+    # User-defined-style binder/elastomer fuels requiring explicit
+    # atomic composition (handled via UserReactant).
+    "HTPB", "MCCN", "OCN", "NCS", "NCT", "GAP", "PEG",
+    "PBAN", "CTPB", "HTPE", "Desmophen",
+]
+
+# ── Category groupings (display only — every entry also exists above) ──
+OXIDIZER_CATEGORIES = {
+    "Cryogenic": [
+        "O2(L)", "O2", "F2(L)", "F2", "O3(L)", "O3", "FLOX(L)", "OF2",
+    ],
+    "Storable / Hypergolic": [
+        "N2O4(L)", "N2O4", "N2O3(L)", "MON-10(L)", "MON-25(L)", "RFNA(L)",
+        "IRFNA-III(L)", "IRFNA-IV(L)", "HNO3(L)", "HNO3", "H2O2(L)", "H2O2",
+        "ClF3(L)", "ClF3", "ClF5(L)", "ClF5", "BrF3", "BrF5", "IF5",
+        "N2F4", "NF3(L)", "NF3", "N2O", "NO2", "NO", "ONF3",
+    ],
+    "Solid Oxidizers": [
+        "NH4ClO4(I)", "NH4ClO4(II)", "NH4ClO4(III)",
+        "NH4NO3(I)", "NH4NO3(II)", "NH4NO3(III)", "NH4NO3(IV)", "NH4NO3(L)",
+        "KNO3(a)", "KNO3(b)", "KNO3(L)", "NaNO3(a)", "NaNO3(b)", "NaNO3(L)",
+        "LiClO4(cr)", "LiClO4(L)", "KClO4(cr)", "NaClO4(cr)",
+        "ADN", "HAN", "AN/AC", "DNAN",
+    ],
+    "Specialty / Research": [
+        "Air", "CO2", "SO2", "SO3", "Cl2O7", "ClO3F", "HClO4(L)",
+    ],
+}
+
+FUEL_CATEGORIES = {
+    "Cryogenic": [
+        "H2(L)", "H2", "CH4(L)", "CH4", "C2H6(L)", "C2H6", "C2H4(L)",
+        "C2H4", "C3H8(L)", "C3H8", "Slush-H2",
+    ],
+    "Hydrocarbon": [
+        "RP-1", "RP-2", "RG-1", "Syntin", "Kerosene", "JP-4", "JP-5",
+        "JP-7", "JP-8", "JP-10(L)", "Jet-A(L)", "Diesel", "n-Heptane",
+        "n-Octane", "Isooctane", "Cyclohexane", "Benzene", "Toluene",
+        "Xylene",
+    ],
+    "Alcohol": [
+        "CH3OH(L)", "CH3OH", "C2H5OH(L)", "C2H5OH", "C3H7OH(L)",
+        "C3H8O,1propanol", "C4H9OH(L)", "n-Butanol", "Methanol/Water",
+    ],
+    "Storable / Hypergolic": [
+        "N2H4(L)", "N2H4", "MMH", "MMH(L)", "UDMH", "UDMH(L)",
+        "Aerozine-50", "C2H8N2(L),UDMH", "N2H4/UDMH",
+    ],
+    "Esters / Ethers / Misc": [
+        "CH3OCH3", "C2H4O,ethylen-o", "CH3COOH", "C3H6O,acetone",
+        "HCOOH", "C6H12O6", "Biodiesel", "Triethylaluminum", "TEA-TEB",
+    ],
+    "Metal": [
+        "Al(cr)", "Al(L)", "Mg(cr)", "Mg(L)", "B(b)", "B(L)", "Be(cr)",
+        "Be(L)", "Li(cr)", "Li(L)", "Zr(cr)", "Ti(cr)", "Be(a)", "AlH3(cr)",
+    ],
+    "Hybrid Solid Fuel": [
+        "Paraffin", "ABS(cr)", "PE(cr)", "PMMA(cr)", "PVC(cr)", "(CH2)x(cr)",
+    ],
+    "Boranes": [
+        "B2H6", "B2H6(L)", "B5H9", "B5H9(L)", "B10H14",
+    ],
+    "Binder / Elastomer (User-Defined)": [
+        "HTPB", "MCCN", "OCN", "NCS", "NCT", "GAP", "PEG",
+        "PBAN", "CTPB", "HTPE", "Desmophen",
+    ],
+}

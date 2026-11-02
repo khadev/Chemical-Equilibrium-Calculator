@@ -1,0 +1,39 @@
+{
+  "theme": "Light",
+  "language": "fr",
+  "author": "Oukil Khaled Ibn Elwalid",
+  "paths": {
+    "cea_folder": "C:/Users/Admin/Desktop/mr juini septembre/juini java/CEAexec",
+    "fcea2_exe": "C:/Users/Admin/Desktop/mr juini septembre/juini java/CEAexec/FCEA2.exe",
+    "thermo_lib": "",
+    "trans_lib": "",
+    "archive_folder": ""
+  },
+  "units": {
+    "temperature": "K",
+    "isp": "m/s",
+    "pressure": "bar",
+    "thrust": "kN",
+    "length": "mm"
+  },
+  "display": {
+    "show_data_points": true,
+    "show_peak_markers": true,
+    "show_legend": true,
+    "line_thickness": 2,
+    "console_font_size": 10,
+    "diagnostic_mode": "NASA Standard"
+  },
+  "window": {
+    "width": 1920,
+    "height": 949,
+    "x": 100,
+    "y": 50,
+    "maximized": false
+  },
+  "auto_save_interval": 5,
+  "app": {
+    "name": "CEA Calculator Pro",
+    "version": "1.0.0"
+  }
+}
