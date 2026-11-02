@@ -649,31 +649,5 @@ See the full [**LICENSE**](LICENSE) file for details.
 **[⬆ Back to top](#️-chemical-equilibrium-calculator)**
 
 </div>
-````
 
----
-
-### 📤 Upload it to GitHub
-
-In your Git Bash (already inside `C:\Users\Doe\Desktop\Chemical-Equilibrium-Calculator`), run:
-
-```bash
-git add README.md && git commit -m "docs: professional README with badges, sections, and citation" && git push origin main
-```
-
-### 🎯 What makes this version "professional"
-
-| Element | Why it matters |
-|---|---|
-| **Hero section with logo + tagline** | Instant project identity |
-| **Shields.io badges** | Version, license, platform, stars — at-a-glance status |
-| **Collapsible sections** | Long README stays scannable |
-| **Overview + "Why choose" table** | Convinces visitors in 30 seconds |
-| **Feature breakdown in `<details>`** | Depth without overwhelming |
-| **Screenshot gallery** | Visual proof of quality |
-| **3 install paths** | PyPI / source / dev — covers all users |
-| **Troubleshooting `<details>`** | Self-service support |
-| **Roadmap + Citation (BibTeX)** | Research-grade credibility |
-| **Acknowledgements** | Professional & respectful |
-| **Back-to-top link** | UX polish |
 
